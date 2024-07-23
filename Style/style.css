@@ -1,0 +1,72 @@
+
+
+html {
+	background: url("../Images/background.jpg") no-repeat center center;
+				/* 让背景图基于容器大小伸缩 */
+				background-size: cover;
+				/* background-attachment设置背景图像是否固定或者随着页面的其余部分滚动。
+					scroll 背景图片随着页面的滚动而滚动，这是默认的。
+ 					fixed 背景图片不会随着页面的滚动而滚动。
+  					local 背景图片会随着元素内容的滚动而滚动。*/
+				background-attachment: fixed;
+	font-family: Helvetica, Tahoma, Arial, sans-serif;
+}
+
+ body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+.banner {
+	width: 1080px;
+	height: auto;
+	padding-top: 20px;
+}
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 320px);
+	grid-gap: 8px;
+	justify-content: center;
+	margin: 8px 0;
+}
+.gallery-item {
+	position: relative;
+	width: 320px;
+	height: 320px;
+	text-align: center;
+}
+.gallery-item img.background {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.gallery-item img.foreground {
+	position: absolute;
+	top: 18%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 60%;
+	height: 45%;
+}
+.gallery-item p {
+	position: absolute;
+	bottom: 15%;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0;
+	width: 75%;
+	height: 10%;
+	background-color: #f1f1f1;
+	color: blue;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer {
+	width: 100%;
+	text-align: center;
+	padding: 16px;
+	background-color: #f1f1f1;
+}
