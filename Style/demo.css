@@ -40,6 +40,7 @@ section {
   display: flex;
 	flex-direction: column;
   width: 100vw;
+  height: auto;
   min-height: 3vw;
   display: flex;
   align-items: center;
@@ -53,11 +54,12 @@ figcaption {
   max-width: 80vw;
   mix-blend-mode: overlay;
   transform: translate3d(0, 0, 0); /* for safari */
+  color:red;
 }
 a {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
-  color: currentColor;
+  color: red;
 }
 h2 {
   font-size: 1.3em;

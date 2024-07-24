@@ -6,6 +6,7 @@
 <title>Wentao Ma‘s portfolio</title>
 
 <link rel="shortcut icon" href="./Images/favicon.ico" title="Favicon">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" href="./Style/style.css" type="text/css" media="screen">
 <link rel="stylesheet" href="./Resources/menu_cornermorph.css" type="text/css" media="screen">
     <link rel="stylesheet" href="./Style/main.css">
@@ -54,42 +55,150 @@
 
         <main>
 		
-            <section>
+        <section>
+			<div>
 			<img class="banner" src="./Images/TopTitle.png" alt="Banner Image">
+			</div>
+			<div id="centered-box01" class="centered-box">
+				<div id="ARSports-container01" class="centered-box-01-container">
+					<div id="centered-box01-captial01">From AR Face Tracker to AR Sports</div>
+					<div class="centered-box01-left">
+						<div class="centered-box01-image-box">
+							<img src="./Images/ARSports-2.webp" alt="Image 1">
+							<div class="centered-box01-caption">March, 2022</div>
+						</div>
+						<div class="centered-box01-image-box">
+							<img src="./Images/ARSports-3.webp" alt="Image 2">
+							<div class="centered-box01-caption">Dec., 2022</div>
+						</div>
+						<div class="centered-box01-image-box">
+							<img src="./Images/ARSports-4.webp" alt="Image 3">
+							<div class="centered-box01-caption">Feb., 2024</div>
+						</div>
+					</div>
+					<div class="centered-box01-right">
+						<div class="centered-box01-description">AR sports is the project I put the most effort into during high school. I started with AR Face Tracker when I was learning game development in early 2022, and continued to improve my skills while optimizing the game in next two years until it was successfully released on the AppStore and Google Play platforms in 2024.</div>
+						<button class="centered-box-next-button" onclick="ARSportNext01()">Next</button>
+					</div>
+				</div>
+				<div id="ARSports-container02" class="centered-box-02-container">
+					<div id="centered-box01-captial01">AR Face Tracker</div>
+					<div class="centered-box01-left">
+						<div class="centered-box01-image-box">
+							<img src="./Images/ARSports-5.jpg" alt="Image 1" style="width:280px;height:280px;">
+						</div>
+						<div class="centered-box01-image-box">
+							<img src="./Images/ARSports-2.webp" alt="Image 3">
+						</div>
+					</div>
+					<div class="centered-box01-right">
+						<div class="centered-box01-description" style="font-size:15px">In early 2022, I participated in the Apple WWDC Swift Student Challenge with AR Face Tracker, which uses AR Face Detection technology to track the player's head movement. Players tilted their heads left and right to control the goalkeeper defensing for incoming balls. <br />This innovative human-computer interaction method helped me win the award.<br /><br /><I>I had no art skills then, so I could only make ugly scenes like this. The game's creative control methods mainly win the award.</I>
+						</div>
+						<button class="centered-box-next-button" onclick="ARSportNext02()">Next</button>
+					</div>
+				</div>
+				<div id="ARSports-container03" class="centered-box-03-container">
+					<div id="centered-box01-captial01">Self-improvement</div>
+					<div class="centered-box01-left">
+						<div class="centered-box01-description" style="font-size:15px">To port this game to more platforms, I chose Unity, a popular game development tool. In parallel with completing five Unity courses on Coursera, I also learned some knowledge of Photoshop and Blender, which allowed me to improve the game's graphics. At the end of 2022, I remade the game with Unity and applied to CMU's High School Game Design Academy.<br /><br /><I>I made models of the player and purchased the scene from the Unity Asset Store.</I></div>
+						<div class="centered-box01-image-box">
+							<img src="./Images/ARSports-7.webp" alt="Image 1" style="width:480px;height:200px;">
+						</div>
+						
+					</div>
+					<div class="centered-box01-right">
+						<div class="centered-box01-image-box">
+							<img src="./Images/ARSports-6.webp" alt="Image 3" style="width:300px;height:200px;">
+						</div>
+						<div class="centered-box01-image-box">
+							<img src="./Images/ARSports-8.png" alt="Image 3" style="width:240px;height:180px;">
+						</div>
+						<button class="centered-box-next-button"  onclick="ARSportNext03()">Next</button>
+					</div>
+				</div>
+				<div id="ARSports-container04" class="centered-box-04-container">
+					<div id="centered-box01-captial01">AR Sports</div>
+					<div class="centered-box04-left">
+						<div class="centered-box04-image-box">
+							<img src="./Images/ARSports-9.webp" alt="Image 1" style="width:160px;height:240px;">
+						</div><div class="centered-box04-image-box">
+							<img src="./Images/ARSports-10.webp" alt="Image 1" style="width:160px;height:240px;">
+						</div><div class="centered-box04-image-box">
+							<img src="./Images/ARSports-11.webp" alt="Image 1" style="width:160px;height:240px;">
+						</div>
+						<div class="centered-box01-description" style="font-size:16px">From 2023 to 2024, I continued developing the game. I introduced 5 more different control methods and created 5 new mini-games. Finally, I made a sports mini-game collection called AR Sports. In early 2024, AR Sports was released the game on the App Store and Google Play.</div>
+						
+						
+					</div>
+					<div class="centered-box04-right">
+						<div class="centered-box04-image-box">
+							<img src="./Images/ARSports-12.webp" alt="Image 1" style="width:160px;height:240px;">
+						</div><div class="centered-box04-image-box">
+							<img src="./Images/ARSports-13.webp" alt="Image 1" style="width:160px;height:240px;">
+						</div><div class="centered-box04-image-box">
+							<img src="./Images/ARSports-14.webp" alt="Image 1" style="width:160px;height:240px;">
+						</div>
+						<div class="centered-box04-container" >
+						<a href=""><img src="./Images/ARSports-Youtube.webp" alt="Image 1" style="width:160px;height:48px;marging:6px;"></a>
+						<a href=""><img src="./Images/ARSports-Apple.png" alt="Image 1" style="width:160px;height:48px;marging:6px;"></a>
+						<a href=""><img src="./Images/ARSports-Google.png" alt="Image 1" style="width:160px;height:48px;marging:6px;"></a>
+						<button class="centered-box-next-button"  onclick="ARSportBack()">Back</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="centered-box02" class="centered-box">
+				<p style="color:blue;">This is centered box 02.</p>
+				<h3> header </h3>
+				test
+				<img src="./Images/favicon192.png"></img>
+			</div>
+			<div id="centered-box03" class="centered-box">
+				<p style="color:blue;">This is centered box 03.</p>
+			</div>
+			<div id="centered-box04" class="centered-box">
+				<p style="color:blue;">This is centered box 04.</p>
+			</div>
+			<div id="centered-box05" class="centered-box">
+				<p style="color:blue;">This is centered box 05.</p>
+			</div>
+			<div id="centered-box06" class="centered-box">
+				<p style="color:blue;">This is centered box 06.</p>
+			</div>
 		<div class="gallery">
-        <div class="gallery-item">
-            <img class="background" src="./Images/BoxBG01.png" alt="Background Image 1">
-            <img class="foreground" src="./Images/ezgif-4-0262171183.webp" alt="Foreground Image 1">
-            <div class="item-title">AR Sports</div>
+        <div class="gallery-item" id="gallery-item01">
+			<img class="background" id="imgBox01"     src="./Images/BoxBG01.png" alt="Background Image 1">
+			<img class="foreground" id="imgBoxFore01" src="./Images/ARSports-0.webp" alt="Foreground Image 1">
+			<div class="item-title" id="item-title01">AR Sports</div>
+		</div>
+        <div class="gallery-item" id="gallery-item02">
+            <img class="background" id="imgBox02"    src="./Images/BoxBG01.png" alt="Background Image 2">
+            <img class="foreground" id="imgBoxFore02" src="./Images/favicon192.png" alt="Foreground Image 2">
+            <div class="item-title" id="item-title02">3D Transformer</div>
         </div>
-        <div class="gallery-item">
-            <img class="background" src="./Images/BoxBG01.png" alt="Background Image 2">
-            <img class="foreground" src="./Images/favicon192.png" alt="Foreground Image 2">
-            <div class="item-title">3D Transformer</div>
+        <div class="gallery-item" id="gallery-item03">
+            <img class="background" id="imgBox03"    src="./Images/BoxBG01.png" alt="Background Image 3">
+            <img class="foreground" id="imgBoxFore03" src="./Images/favicon192.png" alt="Foreground Image 3">
+            <div class="item-title" id="item-title03">残疾人应用</div>
         </div>
-        <div class="gallery-item">
-            <img class="background" src="./Images/BoxBG01.png" alt="Background Image 3">
-            <img class="foreground" src="./Images/favicon192.png" alt="Foreground Image 3">
-            <div class="item-title">残疾人应用</div>
+        <div class="gallery-item" id="gallery-item04">
+            <img class="background" id="imgBox04"    src="./Images/BoxBG01.png" alt="Background Image 4">
+            <img class="foreground" id="imgBoxFore04" src="./Images/favicon192.png" alt="Foreground Image 4">
+            <div class="item-title" id="item-title04">Mock Courses</div>
         </div>
-        <div class="gallery-item">
-            <img class="background" src="./Images/BoxBG01.png" alt="Background Image 4">
-            <img class="foreground" src="./Images/favicon192.png" alt="Foreground Image 4">
-            <div class="item-title">Mock Courses</div>
+        <div class="gallery-item" id="gallery-item05">
+            <img class="background" id="imgBox05"    src="./Images/BoxBG01.png" alt="Background Image 5">
+            <img class="foreground" id="imgBoxFore05" src="./Images/AINautralNetwork-0.webp" alt="Foreground Image 5">
+            <div class="item-title" id="item-title05">AI Neutral Network</div>
         </div>
-        <div class="gallery-item">
-            <img class="background" src="./Images/BoxBG01.png" alt="Background Image 5">
-            <img class="foreground" src="./Images/ezgif-6-cc886929d8.webp" alt="Foreground Image 5">
-            <div class="item-title">AI Neutral Network</div>
-        </div>
-        <div class="gallery-item">
-            <img class="background" src="./Images/BoxBG01.png" alt="Background Image 6">
-            <img class="foreground" src="./Images/favicon192.png" alt="Foreground Image 6">
-            <div class="item-title">Websites</div>
+        <div class="gallery-item" id="gallery-item06">
+            <img class="background" id="imgBox06"    src="./Images/BoxBG01.png" alt="Background Image 6">
+            <img class="foreground" id="imgBoxFore06" src="./Images/favicon192.png" alt="Foreground Image 6">
+            <div class="item-title" id="item-title06">Websites</div>
         </div>
     </div>
                 <div>
-				    <p> <a href= "mailto: tony.ma.2006@outlook.com"> mailto: tony.ma.2006@outlook.com </a></p>
+				    <p> <a href= "mailto: tony.ma.2006@outlook.com" style="color:red;"> mailto: tony.ma.2006@outlook.com </a></p>
                 </div>
             </section>
     
@@ -98,6 +207,150 @@
         </main>
     </div>
 	
+<script>
+// 添加鼠标悬停事件监听器
+document.getElementById('imgBox01').addEventListener('mouseover', () => {
+    // 更改图像源
+    document.getElementById('imgBoxFore01').src = './Images/ARSports-1.webp';
+	 document.getElementById('item-title01').style.color = 'blue';
+});
+
+// 添加鼠标移出事件监听器
+document.getElementById('imgBox01').addEventListener('mouseout', () => {
+    // 恢复原始图像源
+    document.getElementById('imgBoxFore01').src = './Images/ARSports-0.webp';
+	document.getElementById('item-title01').style.color = 'gray';
+});
+
+// 添加鼠标悬停事件监听器
+document.getElementById('imgBox02').addEventListener('mouseover', () => {
+    // 更改图像源
+    document.getElementById('imgBoxFore02').src = './Images/ARSports-1.webp';
+	 document.getElementById('item-title02').style.color = 'blue';
+});
+
+// 添加鼠标移出事件监听器
+document.getElementById('imgBox02').addEventListener('mouseout', () => {
+    // 恢复原始图像源
+    document.getElementById('imgBoxFore02').src = './Images/ARSports-0.webp';
+	document.getElementById('item-title02').style.color = 'gray';
+});
+	
+// 添加鼠标悬停事件监听器
+document.getElementById('imgBox03').addEventListener('mouseover', () => {
+    // 更改图像源
+    document.getElementById('imgBoxFore03').src = './Images/ARSports-1.webp';
+	document.getElementById('item-title03').style.color = 'blue';
+});
+
+// 添加鼠标移出事件监听器
+document.getElementById('imgBox03').addEventListener('mouseout', () => {
+    // 恢复原始图像源
+    document.getElementById('imgBoxFore03').src = './Images/ARSports-0.webp';
+	document.getElementById('item-title03').style.color = 'gray';
+} );
+	 
+// 添加鼠标悬停事件监听器
+document.getElementById('imgBox04').addEventListener('mouseover', () => {
+    // 更改图像源
+    document.getElementById('imgBoxFore04').src = './Images/ARSports-1.webp';
+	document.getElementById('item-title04').style.color = 'blue';
+});
+
+// 添加鼠标移出事件监听器
+document.getElementById('imgBox04').addEventListener('mouseout', () => {
+    // 恢复原始图像源
+    document.getElementById('imgBoxFore04').src = './Images/ARSports-0.webp';
+	document.getElementById('item-title04').style.color = 'gray';
+});
+
+// 添加鼠标悬停事件监听器
+document.getElementById('imgBox05').addEventListener('mouseover', () => {
+    // 更改图像源
+    document.getElementById('imgBoxFore05').src = './Images/AINautralNetwork-1.webp';
+	 document.getElementById('item-title05').style.color = 'blue';
+});
+
+// 添加鼠标移出事件监听器
+document.getElementById('imgBox05').addEventListener('mouseout', () => {
+    // 恢复原始图像源
+    document.getElementById('imgBoxFore05').src = './Images/AINautralNetwork-0.webp';
+	document.getElementById('item-title05').style.color = 'gray';
+});
+	 
+// 添加鼠标悬停事件监听器
+document.getElementById('imgBox06').addEventListener('mouseover', () => {
+    // 更改图像源
+    document.getElementById('imgBoxFore06').src = './Images/ARSports-1.webp';
+	document.getElementById('item-title06').style.color = 'blue';
+});
+
+// 添加鼠标移出事件监听器
+document.getElementById('imgBox06').addEventListener('mouseout', () => {
+    // 恢复原始图像源
+    document.getElementById('imgBoxFore06').src = './Images/ARSports-0.webp';
+	document.getElementById('item-title06').style.color = 'gray';
+});
+
+$(document).ready(function() {
+    $('#gallery-item01').click(function() {
+		$('#ARSports-container01').fadeIn(1400);
+        HideBoxes(); 
+		$('#centered-box01').fadeIn(1000); // 1秒淡入效果
+    });
+    $('#gallery-item02').click(function() {
+        HideBoxes(); 
+		$('#centered-box02').fadeIn(1000); // 1秒淡入效果
+    });
+    $('#gallery-item03').click(function() {
+        HideBoxes(); 
+		$('#centered-box03').fadeIn(1000); // 1秒淡入效果
+    });
+    $('#gallery-item04').click(function() {
+        HideBoxes(); 
+		$('#centered-box04').fadeIn(1000); // 1秒淡入效果
+    });
+    $('#gallery-item05').click(function() {
+        HideBoxes(); 
+		$('#centered-box05').fadeIn(1000); // 1秒淡入效果
+    });
+    $('#gallery-item06').click(function() {
+        HideBoxes(); 
+		$('#centered-box06').fadeIn(1000); // 1秒淡入效果
+    });
+});
+
+function HideBoxes(){
+	$('.gallery-item').children().fadeOut(400); // 1000表示淡出时间为1秒（1000毫秒）
+}
+
+function ShowBoxes(){
+	$('.gallery-item').children().fadeIn(400); // 1000表示淡出时间为1秒（1000毫秒）
+}
+
+function ARSportNext01() {
+	$('#ARSports-container01').fadeOut(400); // 1000表示淡出时间为1秒（1000毫秒）
+	$('#ARSports-container02').delay(500).fadeIn(400); // 1000表示淡出时间为1秒（1000毫秒）
+}
+
+function ARSportNext02() {
+	$('#ARSports-container02').fadeOut(400); // 1000表示淡出时间为1秒（1000毫秒）
+	$('#ARSports-container03').delay(500).fadeIn(400); // 1000表示淡出时间为1秒（1000毫秒）
+}
+
+function ARSportNext03() {
+	$('#ARSports-container03').fadeOut(400); // 1000表示淡出时间为1秒（1000毫秒）
+	$('#ARSports-container04').delay(500).fadeIn(400); // 1000表示淡出时间为1秒（1000毫秒）
+}
+
+function ARSportBack() {
+	$('#ARSports-container04').fadeOut(400);
+	$('#centered-box01').fadeOut(1000); // 1秒淡入效果
+	ShowBoxes(); 
+}
+
+</script>
+
 </body>
 </html>
 
