@@ -69,10 +69,20 @@ body {
     padding: 20px;
 }
 
+.centered-box01-captial01 {
+	font-size:24px;
+}
+
 .centered-box01-left {
     padding: 20px;
 	width:100%;
     display: flex;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .centered-box01-image-box {

@@ -10,17 +10,35 @@
 *::after {
   box-sizing: border-box;
 }
-
+html,
+body {
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
+  scroll-behavior: smooth;
+  min-height: 100%;
+}
+body {
+  font-family: "Asap", sans-serif;
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+  overflow-x: hidden;
+  background: linear-gradient(
+    to bottom,
+    oklch(60% 0.2 230),
+    oklch(60% 0.2 180)
+  );
+  color: #333;
+  font-size: clamp(12px, 5.5vw, 28px);
+}
 main {
   position: relative;
 }
 section {
   position: relative;
-  display: flex;
-  flex-direction: column;
   width: 100vw;
-  height: auto;
-  min-height: 3vw;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,12 +51,11 @@ figcaption {
   max-width: 80vw;
   mix-blend-mode: overlay;
   transform: translate3d(0, 0, 0); /* for safari */
-  color:red;
 }
 a {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
-  color: red;
+  color: currentColor;
 }
 h2 {
   font-size: 1.3em;
@@ -107,9 +124,8 @@ svg {
   bottom: 0;
   left: 0;
   width: 100vw;
-  width: 100vw;
   height: 100vh;
-  background-image: url("../Images/UnderWaterBG2.jpg");
+  background-image: url("https://images.unsplash.com/photo-1518837695005-2083093ee35b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTEyMTIwOTZ8&ixlib=rb-4.0.3&q=80&w=400");
   background-repeat: repeat-x;
 
   --duration: 8s;
@@ -157,7 +173,7 @@ svg {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url("../Images/UnderWaterBG2.jpg");
+  background-image: url("https://images.unsplash.com/photo-1568145675395-66a2eda0c6d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTEyMTAwNjh8&ixlib=rb-4.0.3&q=80&w=400");
   background-repeat: repeat;
 
   --duration: 10s;
