@@ -1,7 +1,7 @@
 
 
 html {
-	font-family: Helvetica, Tahoma, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
 }
 html,
 body {
@@ -51,7 +51,7 @@ body {
 }
 
 .centered-box{ 
-	display: none;
+	display: block;
 	width: 960px;
 	height: auto;
     padding: 20px;
@@ -59,6 +59,7 @@ body {
     border: 1px solid #000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
+	color:#808080;
 }
 
 .centered-box-01-container {
@@ -70,7 +71,8 @@ body {
 }
 
 .centered-box01-captial01 {
-	font-size:24px;
+	font-size:36px;
+	margin: 36px;
 }
 
 .centered-box01-left {
@@ -116,6 +118,7 @@ body {
 	font-size: 20px;
 	text-align: left;
 	padding-right: 64px;
+	line-height: 1.8;
 }
 
 .centered-box-02-container {
@@ -194,20 +197,20 @@ body {
 
 .gallery {
 	display: grid;
-	grid-template-columns: repeat(3, 320px);
+	grid-template-columns: repeat(3, 390px);
 	grid-gap: 0px;
 	justify-content: center;
 	margin: 8px 0;
 }
 .gallery-item {
 	position: relative;
-	width: 320px;
-	height: 320px;
+	width: 360px;
+	height: 450px;
 	text-align: center;
     cursor: pointer; /* 设置光标为手形 */
 }
 .gallery-item:hover {
-    transform: scale(1.15); /* 放大15% */
+    transform: scale(1.08); /* 放大15% */
 }
 
 .gallery-item img.background {
@@ -220,8 +223,8 @@ body {
 	top: 5%;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 84%;
-	height: 63%;
+	width: 94%;
+	height: 60%;
     pointer-events: none; 
 }
 .item-title {
@@ -231,12 +234,12 @@ body {
 	transform: translateX(-50%);
 	margin: 0;
 	width: 75%;
-	height: 10%;
+	height: 30%;
 	color: gray;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    pointer-events: none; 
+    pointer-events: none;
 }
 .footer {
 	width: 100%;
@@ -245,4 +248,37 @@ body {
 	background-color: #f1f1f1;
 }
 
+.text-container {
+	position: absolute;
+	bottom: 12%;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0;
+	width: 86%; 
+	height: 20%;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+	text-align: left;
+	color: black;
+}
 
+.small-text {
+	background-color: lightgray; /* 浅灰色背景 */
+	font-size: 14px; /* 较小字体 */
+	margin: 10px 0; /* 段落间距 */
+	color: black;
+}
+
+.large-bold-text {
+	font-weight: bold; /* 加粗字体 */
+	font-size: 16px; /* 较大字体 */
+	margin: 10px 0; /* 段落间距 */
+	color: #404040;
+}
+
+.normal-text {
+	font-size: 14px; /* 正常字体大小 */
+	margin: 10px 0; /* 段落间距 */
+	color: gray;
+}

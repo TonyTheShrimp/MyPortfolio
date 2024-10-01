@@ -23,7 +23,7 @@
 <meta property="og:title" content="Home - Wentao Ma's portfolio">
 <meta property="og:url" content="https://tonytheshrimp.github.io/MyPortfolio/">
 <meta property="og:site_name" content="Wentao Ma">
-<meta property="og:image:width" content="1600">
+<meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="1074">
 <meta property="og:image:type" content="image/jpeg">
 
@@ -39,332 +39,257 @@
 <button id="fixed-button" onclick="ShowBoxes()" style="display:none;">Back</button>
 
 <div class="container">
-<!--
-        <div id='surface'></div>
-        <div id='caustics'></div>
-        <div id='bg'></div>
-        <div id='sun'>
-            <div id='sun_layer1'></div>
-            <div id='sun_layer2'></div>
-            <div id='sun_layer3'></div>
-        </div>
 
-        <svg>
-            <filter id="noise1">
-                <feTurbulence type="turbulence" baseFrequency=".05" numOctaves="1" seed="3" stitchTiles='stitch' />
-                <feDisplacementMap in="SourceGraphic" scale="10" />
-            </filter>
-        </svg>
--->
         <main>
 		
-        <section id="Section-Container">
-			<div>
-				<img class="banner" src="./Images/TopTitle.png" alt="Banner Image">
-			</div>
-			<div class="gallery" id="gallery-container">
-				<div class="gallery-item" id="gallery-item01">
-					<img class="background" id="imgBox01"     src="./Images/BoxBG01.png" alt="Background Image 1">
-					<img class="foreground" id="imgBoxFore01" src="./Images/ARSports-0.webp" alt="Foreground Image 1">
-					<div class="item-title" id="item-title01">Story of AR Sports</div>
+			<section id="Section-Container">
+				<div>
+					<img class="banner" src="./Images/TopTitle.png" alt="Banner Image" />
 				</div>
-				<div class="gallery-item" id="gallery-item02">
-					<img class="background" id="imgBox02"    src="./Images/BoxBG01.png" alt="Background Image 2">
-					<img class="foreground" id="imgBoxFore02" src="./Images/Helevator-0.webp" alt="Foreground Image 2">
-					<div class="item-title" id="item-title02">Hellevator from CMU</div>
-				</div>
-				<div class="gallery-item" id="gallery-item03">
-					<img class="background" id="imgBox03"    src="./Images/BoxBG01.png" alt="Background Image 3">
-					<img class="foreground" id="imgBoxFore03" src="./Images/3DProject-0.webp" alt="Foreground Image 3">
-					<div class="item-title" id="item-title03">Monument Valley Clone</div>
-				</div>
-				<div class="gallery-item" id="gallery-item04">
-					<img class="background" id="imgBox04"    src="./Images/BoxBG01.png" alt="Background Image 4">
-					<img class="foreground" id="imgBoxFore04" src="./Images/favicon192.png" alt="Foreground Image 4">
-					<div class="item-title" id="item-title04">Dad's presbyopia</div>
-				</div>
-				<div class="gallery-item" id="gallery-item05">
-					<img class="background" id="imgBox05"    src="./Images/BoxBG01.png" alt="Background Image 5">
-					<img class="foreground" id="imgBoxFore05" src="./Images/AINautralNetwork-0.webp" alt="Foreground Image 5">
-					<div class="item-title" id="item-title05">AI Neural Network, sweet experience</div>
-				</div>
-				<div class="gallery-item" id="gallery-item06">
-					<img class="background" id="imgBox06"    src="./Images/BoxBG01.png" alt="Background Image 6">
-					<img class="foreground" id="imgBoxFore06" src="./Images/Other-0.webp" alt="Foreground Image 6">
-					<div class="item-title" id="item-title06">Studied on my own</div>
-				</div>
-			</div>
-			<div id="centered-box01" class="centered-box">
-				<div class="centered-box01-captial01">Story: From AR Face Tracker to AR Sports</div>
-				<div class="centered-box01-left">
-					<div class="centered-box01-image-box">
-						<img src="./Images/ARSports-2.webp" alt="Image 1">
-						<div class="centered-box01-caption">March, 2022</div>
+				<div class="gallery" id="gallery-container">
+					<div class="gallery-item" id="gallery-item01">
+						<img class="background" id="imgBox01" src="./Images/BoxBG03.png" alt="Background Image 1" />
+						<img class="foreground" id="imgBoxFore01" src="./Images/ARSports-1.webp" alt="Foreground Image 1" />
+						<div class="text-container">
+							<p class="large-bold-text">AR Sports</p>
+							<p class="normal-text">This is the project in which I invested the most and gained the most during high school.</p>
+						</div>
 					</div>
-					<div class="centered-box01-image-box">
-						<img src="./Images/ARSports-3.webp" alt="Image 2">
-						<div class="centered-box01-caption">December, 2022</div>
+					<div class="gallery-item" id="gallery-item02">
+						<img class="background" id="imgBox02" src="./Images/BoxBG03.png" alt="Background Image 2" />
+						<img class="foreground" id="imgBoxFore02" src="./Images/Helevator-1.webp" alt="Foreground Image 2" />
+						<div class="text-container">
+							<p class="large-bold-text">Hellevator</p>
+							<p class="normal-text">We made it in CMU National High School Game Academy.</p>
+						</div>
+						<div class="item-title" id="item-title02"></div>
 					</div>
-					<div class="centered-box01-image-box">
-						<img src="./Images/ARSports-4.webp" alt="Image 3">
-						<div class="centered-box01-caption">February, 2024</div>
-					</div>
-				</div>
-				<div class="centered-box01-right">
-					<div class="centered-box01-description">AR sports was undoubtedly the project that consumed most of my high school years. My journey began in early 2022 with a deep dive into game development, where I laid the foundation by creating an AR Face Tracker. It won Apple WWDC Swift Student Challenge for me because the creative gameplay. <br /> Over the subsequent two years, I dedicated countless hours to refining my skills and optimizing the game, fueled by a passion for pushing the boundaries of augmented reality. The culmination of this effort was the successful launch of the AR sports app on both the App Store and Google Play in 2024.</div>
-				</div>
-			
-				<div class="centered-box01-captial01">AR Face Tracker</div>
-				<div class="project-duration"><b>Duration:</b> 3 months  <b>Tools:</b> Swift on Mac </div>
-				<div class="centered-box01-left">
-					<div class="centered-box01-image-box">
-						<img src="./Images/ARSports-5.jpg" alt="Image 1" style="width:280px;height:280px;">
-					</div>
-					<div class="centered-box01-image-box">
-						<img src="./Images/ARSports-2.webp" alt="Image 3">
-					</div>
-				</div>
-				<div class="centered-box01-right">
-					<div class="centered-box01-description" style="font-size:15px">In early 2022, I embarked on a challenging yet rewarding journey by entering the Apple WWDC Swift Student Challenge.<br />My project, AR Face Tracker, harnessed the power of AR Face Detection to introduce an innovative gameplay mechanic. Players intuitively controlled the goalkeeper by tilting their heads left and right to defend against incoming balls. While my artistic abilities were limited at the time, resulting in somewhat rudimentary visuals, the game's groundbreaking human-computer interaction method ultimately secured me a coveted award.<br /> It was a testament to the power of creative problem-solving and the potential of augmented reality.
 
-</I>
+					<div class="gallery-item" id="gallery-item03">
+						<img class="background" id="imgBox03" src="./Images/BoxBG03.png" alt="Background Image 3" />
+						<img class="foreground" id="imgBoxFore03" src="./Images/3DProject-1.webp" alt="Foreground Image 3" />
+						<div class="text-container">
+							<p class="large-bold-text">Monument Valley Clone</p>
+							<p class="normal-text">Monument Valley is a game I love. I delved into 3D space mapping and perspective through this Monument Valley remake I found on Github.</p>
+						</div><div class="item-title" id="item-title03"></div>
+					</div>
+
+					<div class="gallery-item" id="gallery-item06">
+						<img class="background" id="imgBox06" src="./Images/BoxBG03.png" alt="Background Image 6" />
+						<img class="foreground" id="imgBoxFore06" src="./Images/Other-1.webp" alt="Foreground Image 6" />
+						<div class="text-container">
+							<p class="large-bold-text">Computer Graphics Learning</p>
+							<p class="normal-text">I learned computer graphics on Edx, and unity shader development.</p>
+						</div><div class="item-title" id="item-title03"></div>
+					</div>
+
+					<div class="gallery-item" id="gallery-item05">
+						<img class="background" id="imgBox05" src="./Images/BoxBG03.png" alt="Background Image 5" />
+						<img class="foreground" id="imgBoxFore05" src="./Images/AINautralNetwork-1.webp" alt="Foreground Image 5" />
+						<div class="text-container">
+							<p class="large-bold-text">AI Neural Network Simulator</p>
+							<p class="normal-text">This project won Apple WWDC Swift Student Challenge for me, again.</p>
+						</div><div class="item-title" id="item-title03"></div>
+					</div>
+
+					<div class="gallery-item" id="gallery-item04">
+						<img class="background" id="imgBox04" src="./Images/BoxBG03.png" alt="Background Image 4" />
+						<img class="foreground" id="imgBoxFore04" src="./Images/Other-1.webp" alt="Foreground Image 4" />
+						<div class="text-container">
+							<p class="large-bold-text">Miscellaneous</p>
+							<p class="normal-text">Some small projects I made.</p>
+						</div><div class="item-title" id="item-title03"></div>
 					</div>
 				</div>
-			
-				<div class="centered-box01-captial01">Studied on my own</div>
-				<div class="project-duration"><b>Duration:</b> 8 months  <b>Tools:</b> Unity, blender, photoshop </div>
-				<div class="centered-box01-left">
-					<div class="centered-box01-description" style="font-size:15px">TTo expand the reach of my game beyond its initial platform, I selected Unity, a renowned game development engine. While simultaneously completing five Unity courses on Coursera, I delved into the realms of Photoshop and Blender to enhance the game's visual appeal. By the end of 2022, I had successfully reimagined the game using Unity's powerful tools and submitted an application to CMU's prestigious High School Game Design Academy.<br /><br /><I>I made models of the players, some scenes were purchased from the Unity Asset Store.</I></div>
-					<div class="centered-box01-image-box">
-						<img src="./Images/ARSports-7.webp" alt="Image 1" style="width:480px;height:200px;">
+				<!--
+				<div id="centered-box01" class="centered-box">
+					<div class="centered-box01-captial01">Story: From AR Face Tracker to AR Sports</div>
+					<div class="centered-box01-left">
+						<div class="centered-box01-image-box">
+							<img src="./Images/ARSports-2.webp" alt="Image 1">
+							<div class="centered-box01-caption">March, 2022</div>
+						</div>
+						<div class="centered-box01-image-box">
+							<img src="./Images/ARSports-3.webp" alt="Image 2">
+							<div class="centered-box01-caption">December, 2022</div>
+						</div>
+						<div class="centered-box01-image-box">
+							<img src="./Images/ARSports-4.webp" alt="Image 3">
+							<div class="centered-box01-caption">February, 2024</div>
+						</div>
 					</div>
-					
-				</div>
-				<div class="centered-box01-right">
-					<div class="centered-box01-image-box">
-						<img src="./Images/ARSports-6.webp" alt="Image 3" style="width:300px;height:200px;">
+					<div class="centered-box01-right">
+						<div class="centered-box01-description">AR sports was undoubtedly the project that consumed most of my high school years. My journey began in early 2022 with a deep dive into game development, where I laid the foundation by creating an AR Face Tracker. It won Apple WWDC Swift Student Challenge for me because the creative gameplay. <br /> Over the subsequent two years, I dedicated countless hours to refining my skills and optimizing the game, fueled by a passion for pushing the boundaries of augmented reality. The culmination of this effort was the successful launch of the AR sports app on both the App Store and Google Play in 2024.</div>
 					</div>
-					<div class="centered-box01-image-box">
-						<img src="./Images/ARSports-8.png" alt="Image 3" style="width:240px;height:180px;">
+
+					<div class="centered-box01-captial01">AR Face Tracker</div>
+					<div class="project-duration"><b>Duration:</b> 3 months  <b>Tools:</b> Swift on Mac </div>
+					<div class="centered-box01-left">
+						<div class="centered-box01-image-box">
+							<img src="./Images/ARSports-5.jpg" alt="Image 1" style="width:280px;height:280px;">
+						</div>
+						<div class="centered-box01-image-box">
+							<img src="./Images/ARSports-2.webp" alt="Image 3">
+						</div>
 					</div>
-				</div>
-			
-				<div class="centered-box01-captial01">AR Sports</div>
-				<div class="project-duration"><b>Duration:</b> 12 months  <b>Tools:</b> Unity, blender, photoshop </div>
-				<div class="centered-box04-left">
-					<div class="centered-box04-image-box">
-						<img src="./Images/ARSports-9.webp" alt="Image 1" style="width:160px;height:240px;">
-					</div><div class="centered-box04-image-box">
-						<img src="./Images/ARSports-10.webp" alt="Image 1" style="width:160px;height:240px;">
-					</div><div class="centered-box04-image-box">
-						<img src="./Images/ARSports-11.webp" alt="Image 1" style="width:160px;height:240px;">
+					<div class="centered-box01-right">
+						<div class="centered-box01-description" style="font-size:15px">In early 2022, I embarked on a challenging yet rewarding journey by entering the Apple WWDC Swift Student Challenge.<br />My project, AR Face Tracker, harnessed the power of AR Face Detection to introduce an innovative gameplay mechanic. Players intuitively controlled the goalkeeper by tilting their heads left and right to defend against incoming balls. While my artistic abilities were limited at the time, resulting in somewhat rudimentary visuals, the game's groundbreaking human-computer interaction method ultimately secured me a coveted award.<br /> It was a testament to the power of creative problem-solving and the potential of augmented reality.
+
+	</I>
+						</div>
 					</div>
-					<div class="centered-box01-description" style="font-size:16px">Throughout 2023 and 2024, I remained committed to refining and expanding the game's features. I introduced five innovative control methods, each offering a unique gaming experience. Additionally, I crafted five new mini-games to diversify the gameplay and cater to a broader audience. These efforts culminated in AR Sports, a comprehensive augmented reality sports mini-game collection. In early 2024, I proudly launched AR Sports on the App Store and Google Play. Despite facing challenges in marketing due to my limited experience and resources, I was thrilled to share my creation with the world.</div>
-					
-					
-				</div>
-				<div class="centered-box04-right">
-					<div class="centered-box04-image-box">
-						<img src="./Images/ARSports-12.webp" alt="Image 1" style="width:160px;height:240px;">
-					</div><div class="centered-box04-image-box">
-						<img src="./Images/ARSports-13.webp" alt="Image 1" style="width:160px;height:240px;">
-					</div><div class="centered-box04-image-box">
-						<img src="./Images/ARSports-14.webp" alt="Image 1" style="width:160px;height:240px;">
+
+					<div class="centered-box01-captial01">Studied on my own</div>
+					<div class="project-duration"><b>Duration:</b> 8 months  <b>Tools:</b> Unity, blender, photoshop </div>
+					<div class="centered-box01-left">
+						<div class="centered-box01-description" style="font-size:15px">TTo expand the reach of my game beyond its initial platform, I selected Unity, a renowned game development engine. While simultaneously completing five Unity courses on Coursera, I delved into the realms of Photoshop and Blender to enhance the game's visual appeal. By the end of 2022, I had successfully reimagined the game using Unity's powerful tools and submitted an application to CMU's prestigious High School Game Design Academy.<br /><br /><I>I made models of the players, some scenes were purchased from the Unity Asset Store.</I></div>
+						<div class="centered-box01-image-box">
+							<img src="./Images/ARSports-7.webp" alt="Image 1" style="width:480px;height:200px;">
+						</div>
+
 					</div>
-					<div class="centered-box04-container" >
-					<a href="https://www.youtube.com/watch?v=cWVxT4ckaSw"><img src="./Images/ARSports-Youtube.webp" alt="Image 1" style="width:144px;height:44px;marging:10px;"></a>
-					<a href="https://apps.apple.com/lu/app/ar-sports-head-exercise/id6476606151"><img src="./Images/ARSports-Apple.png" alt="Image 1" style="width:144px;height:44px;marging:10px;"></a>
-					<a href="https://play.google.com/store/apps/details?id=com.MaWentao.ARSports"><img src="./Images/ARSports-Google.png" alt="Image 1" style="width:144px;height:44px;marging:10px;"></a>
+					<div class="centered-box01-right">
+						<div class="centered-box01-image-box">
+							<img src="./Images/ARSports-6.webp" alt="Image 3" style="width:300px;height:200px;">
+						</div>
+						<div class="centered-box01-image-box">
+							<img src="./Images/ARSports-8.png" alt="Image 3" style="width:240px;height:180px;">
+						</div>
 					</div>
-				</div>
-			</div>
-			<div id="centered-box02" class="centered-box">
-				<div class="centered-box01-captial01">Hellevator!</div>
-				<div class="project-duration"><b>Duration:</b> 3 weeks full time  <b>Tools:</b> Unity </div>
-				<div class="centered-box01-left">
-					<div class="centered-box01-image-box">
-						<img src="./Images/Helevator-1.webp" alt="Image 1" style="width:480px;height:270px;">
+
+					<div class="centered-box01-captial01">AR Sports</div>
+					<div class="project-duration"><b>Duration:</b> 12 months  <b>Tools:</b> Unity, blender, photoshop </div>
+					<div class="centered-box04-left">
+						<div class="centered-box04-image-box">
+							<img src="./Images/ARSports-9.webp" alt="Image 1" style="width:160px;height:240px;">
+						</div><div class="centered-box04-image-box">
+							<img src="./Images/ARSports-10.webp" alt="Image 1" style="width:160px;height:240px;">
+						</div><div class="centered-box04-image-box">
+							<img src="./Images/ARSports-11.webp" alt="Image 1" style="width:160px;height:240px;">
+						</div>
+						<div class="centered-box01-description" style="font-size:16px">Throughout 2023 and 2024, I remained committed to refining and expanding the game's features. I introduced five innovative control methods, each offering a unique gaming experience. Additionally, I crafted five new mini-games to diversify the gameplay and cater to a broader audience. These efforts culminated in AR Sports, a comprehensive augmented reality sports mini-game collection. In early 2024, I proudly launched AR Sports on the App Store and Google Play. Despite facing challenges in marketing due to my limited experience and resources, I was thrilled to share my creation with the world.</div>
+
+
 					</div>
-					<div class="centered-box01-description" style="padding:16px;font-size:24px;">A whimsy game about sorting ghosts into the correct levels of the inferno.</div>
-				</div>
-				<div class="centered-box01-right">
-					<div class="centered-box01-description">Step into the shoes of Dante, a twelve-year-old in an unexpected predicament. After a fateful math test cheat, he tumbles headfirst into the fiery depths of Hell. Now, under the watchful eye of the infamous Mephistopheles, Dante takes on a peculiar role: elevator operator to the underworld. As ghosts, spirits, and souls file past, he must swiftly judge their earthly transgressions based on their "life receipts." With the clock ticking and Mephistopheles's expectations soaring, Dante must navigate the delicate balance of justice and efficiency. One misstep could seal his fate in this infernal realm.</div>
-					<div class="centered-box01-image-box">
-						<img src="./Images/Helevator-2.webp" alt="Image 1" style="width:480px;height:270px;">
-					</div>
-				</div>
-				<div class="centered-box01-left">
-					<div class="centered-box01-image-box">
-						<img src="./Images/Helevator-4.png" alt="Image 1" style="width:400px;height:225px;">
-					</div>
-					<div class="centered-box01-description" style="padding:16px;font-size:18px;">This game was developed during the National High School Game Academy in CMU.<br />Our team named Peculiar Geese with five members: Megan (production, sound design), Ellie (art), Ashley (art), Alex (programming) and me (programming).<br />It received the Best Use of TA Resources award for involving all the TAs in voiceover.</div>
-					
-				</div>
-				<div class="centered-box01-right">
-					<div class="centered-box01-image-box">
-						<img src="./Images/Helevator-5.png" alt="Image 1" style="width:400px;height:225px;">
-					</div>
-					<div class="centered-box01-image-box">
-						<img src="./Images/Helevator-6.png" alt="Image 1" style="width:400px;height:225px;">
-					</div>
-				</div>
-				<div class="centered-box01-right">
-					<div class="centered-box01-image-box">
-						<img src="./Images/Helevator-3.webp" alt="Image 1" style="width:480px;height:270px;">
-					</div>
-					<div class="centered-box04-container" style="margin:16px">
-					Source code and introduced video are available on Github and Youtube now.<br />
-					<a href="https://youtu.be/_uwp3-n0640"><img src="./Images/ARSports-Youtube.webp" alt="Image 1" style="width:144px;height:44px;marging:10px;"></a>
-					<a href="https://github.com/ObjectOops/Hellevator"><img src="./Images/GitHub_Logo.png" alt="Image 1" style="width:144px;height:64px;marging:10px;"></a>
+					<div class="centered-box04-right">
+						<div class="centered-box04-image-box">
+							<img src="./Images/ARSports-12.webp" alt="Image 1" style="width:160px;height:240px;">
+						</div><div class="centered-box04-image-box">
+							<img src="./Images/ARSports-13.webp" alt="Image 1" style="width:160px;height:240px;">
+						</div><div class="centered-box04-image-box">
+							<img src="./Images/ARSports-14.webp" alt="Image 1" style="width:160px;height:240px;">
+						</div>
+						<div class="centered-box04-container" >
+						<a href="https://www.youtube.com/watch?v=cWVxT4ckaSw"><img src="./Images/ARSports-Youtube.webp" alt="Image 1" style="width:144px;height:44px;marging:10px;"></a>
+						<a href="https://apps.apple.com/lu/app/ar-sports-head-exercise/id6476606151"><img src="./Images/ARSports-Apple.png" alt="Image 1" style="width:144px;height:44px;marging:10px;"></a>
+						<a href="https://play.google.com/store/apps/details?id=com.MaWentao.ARSports"><img src="./Images/ARSports-Google.png" alt="Image 1" style="width:144px;height:44px;marging:10px;"></a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div id="centered-box03" class="centered-box">
-				<div class="centered-box01-captial01">Monument Valley Clone</div>
-				<div class="project-duration"><b>Duration:</b> 6 weeks in summer break<b>Tools:</b> Unity, Javascript </div>
-				<div class="centered-box01-right">
-				</div>
-				<div class="centered-box01-right">
-					<div class="centered-box01-description">Monument Valley is one of my favorite games. Cleverly using optical illusions, the game creates seemingly impossible mazes and paths, giving players a sense of surprise and accomplishment when solving puzzles. The first time I saw this game, I couldn't help but be amazed by its creativity. <br /></div>
-					<div class="centered-box01-image-box">
-						<img src="./Images/3DProject-5.png" alt="Image 1" style="width:240px;height:360px;">
+				<div id="centered-box02" class="centered-box">
+					<div class="centered-box01-captial01">Hellevator!</div>
+					<div class="project-duration"><b>Duration:</b> 3 weeks full time  <b>Tools:</b> Unity </div>
+					<div class="centered-box01-left">
+						<div class="centered-box01-image-box">
+							<img src="./Images/Helevator-1.webp" alt="Image 1" style="width:480px;height:270px;">
+						</div>
+						<div class="centered-box01-description" style="padding:16px;font-size:24px;">A whimsy game about sorting ghosts into the correct levels of the inferno.</div>
 					</div>
-				</div>
-				<div class="centered-box01-right">
-					<div class="centered-box01-image-box">
-						<img src="./Images/3DProject-6.jpg" alt="Image 1" style="width:360px;height:320px;">
-						<img src="./Images/3DProject-7.gif" alt="Image 1" style="width:360px;height:320px;">
+					<div class="centered-box01-right">
+						<div class="centered-box01-description">Step into the shoes of Dante, a twelve-year-old in an unexpected predicament. After a fateful math test cheat, he tumbles headfirst into the fiery depths of Hell. Now, under the watchful eye of the infamous Mephistopheles, Dante takes on a peculiar role: elevator operator to the underworld. As ghosts, spirits, and souls file past, he must swiftly judge their earthly transgressions based on their "life receipts." With the clock ticking and Mephistopheles's expectations soaring, Dante must navigate the delicate balance of justice and efficiency. One misstep could seal his fate in this infernal realm.</div>
+						<div class="centered-box01-image-box">
+							<img src="./Images/Helevator-2.webp" alt="Image 1" style="width:480px;height:270px;">
+						</div>
 					</div>
-					<div class="centered-box01-description">This summer, based on the open source project on Github:<a href="https://github.com/snhwv/Monument-Valley">https://github.com/snhwv/Monument-Valley</a>, I made a simple implementation myself.<br />The basic 3D visual dislocation technology of the Monument Valley game is just orthogonal projection in computer graphics. After projecting 3D objects onto a 2D plane, the connection relationship of 3D space objects is determined based on the position relationship on the 2D plane. This makes it possible to achieve path connections that are impossible in reality.
-					<img src="./Images/3DProject-8.png" alt="Image 1" style="width:480px;height:250px;">
+					<div class="centered-box01-left">
+						<div class="centered-box01-image-box">
+							<img src="./Images/Helevator-4.png" alt="Image 1" style="width:400px;height:225px;">
+						</div>
+						<div class="centered-box01-description" style="padding:16px;font-size:18px;">This game was developed during the National High School Game Academy in CMU.<br />Our team named Peculiar Geese with five members: Megan (production, sound design), Ellie (art), Ashley (art), Alex (programming) and me (programming).<br />It received the Best Use of TA Resources award for involving all the TAs in voiceover.</div>
+
 					</div>
-					
+					<div class="centered-box01-right">
+						<div class="centered-box01-image-box">
+							<img src="./Images/Helevator-5.png" alt="Image 1" style="width:400px;height:225px;">
+						</div>
+						<div class="centered-box01-image-box">
+							<img src="./Images/Helevator-6.png" alt="Image 1" style="width:400px;height:225px;">
+						</div>
+					</div>
+					<div class="centered-box01-right">
+						<div class="centered-box01-image-box">
+							<img src="./Images/Helevator-3.webp" alt="Image 1" style="width:480px;height:270px;">
+						</div>
+						<div class="centered-box04-container" style="margin:16px">
+						Source code and introduced video are available on Github and Youtube now.<br />
+						<a href="https://youtu.be/_uwp3-n0640"><img src="./Images/ARSports-Youtube.webp" alt="Image 1" style="width:144px;height:44px;marging:10px;"></a>
+						<a href="https://github.com/ObjectOops/Hellevator"><img src="./Images/GitHub_Logo.png" alt="Image 1" style="width:144px;height:64px;marging:10px;"></a>
+						</div>
+					</div>
 				</div>
 				
-				<div class="centered-box01-right">
-				The original open source project is based on the Javascript, use three.js framework. After understanding the basic principles, I implemented the game using Javascript and Unity, and made several simple experimental levels.
-				</div>
-				<div class="centered-box01-right">
-					<div class="centered-box01-image-box">
-						<img src="./Images/3DProject-1.webp" alt="Image 1" style="width:240px;height:225px;">
-					</div>
-					<div class="centered-box01-image-box">
-						<img src="./Images/3DProject-2.webp" alt="Image 1" style="width:240px;height:225px;">
-					</div>
-					<div class="centered-box01-image-box">
-						<img src="./Images/3DProject-3.webp" alt="Image 1" style="width:240px;height:225px;">
-					</div>
-					
-				</div>
-			</div>
-			<div id="centered-box04" class="centered-box">
-				<div class="centered-box01-right">
-				<div class="centered-box01-captial01">还没做好</div>
-				</div>
-			</div>
-			<div id="centered-box05" class="centered-box">
-			<div class="centered-box01-captial01">AI Neural Network - 2024 Apple WWDC Swfit Student Challenge Winner</div>
-				<div class="project-duration"><b>Duration:</b> 3 weeks full time in winter break<b>Tools:</b> Swift on Mac </div>
-				<div class="centered-box01-left">
-					<div class="centered-box01-image-box">
-						<img src="./Images/AINautralNetwork-2.webp" alt="Image 3" style="width:280px;height:210px;">
-					</div>
-					<div class="centered-box01-image-box">
-						<img src="./Images/AINautralNetwork-3.webp" alt="Image 3" style="width:280px;height:210px;">
-					</div>
-					<div class="centered-box01-image-box">
-						<img src="./Images/AINautralNetwork-4.webp" alt="Image 3" style="width:280px;height:210px;">
+				<div id="centered-box04" class="centered-box">
+					<div class="centered-box01-right">
+					<div class="centered-box01-captial01">还没做好</div>
 					</div>
 				</div>
-				<div class="centered-box01-right">
-					<div class="centered-box01-description" style="font-size:15px">In 2024, I returned to the Apple WWDC Swift Student Challenge, eager to explore new frontiers. Amidst the burgeoning landscape of AI, I was captivated by the technology's potential. Over the winter break, I immersed myself in AI fundamentals, culminating in developing a primary neural network using Swift. My submission showcased a step-by-step breakdown of the neural network training process, making complex concepts accessible to a broader audience. Fueled by my passion for AI, this innovative approach again secured me a coveted award.<br /><br /><br />
-					<img src="./Images/WWDCWinner2024.webp" alt="Image 3" style="width:320px;height:180px;">
+				<div id="centered-box05" class="centered-box">
+				<div class="centered-box01-captial01">AI Neural Network - 2024 Apple WWDC Swfit Student Challenge Winner</div>
+					<div class="project-duration"><b>Duration:</b> 3 weeks full time in winter break<b>Tools:</b> Swift on Mac </div>
+					<div class="centered-box01-left">
+						<div class="centered-box01-image-box">
+							<img src="./Images/AINautralNetwork-2.webp" alt="Image 3" style="width:280px;height:210px;">
+						</div>
+						<div class="centered-box01-image-box">
+							<img src="./Images/AINautralNetwork-3.webp" alt="Image 3" style="width:280px;height:210px;">
+						</div>
+						<div class="centered-box01-image-box">
+							<img src="./Images/AINautralNetwork-4.webp" alt="Image 3" style="width:280px;height:210px;">
+						</div>
 					</div>
-					<div class="centered-box01-image-box" style="padding-top:32px;">
-						<img src="./Images/AINautralNetwork-1.webp" alt="Image 3" style="width:480px;height:270px;">
+					<div class="centered-box01-right">
+						<div class="centered-box01-description" style="font-size:15px">In 2024, I returned to the Apple WWDC Swift Student Challenge, eager to explore new frontiers. Amidst the burgeoning landscape of AI, I was captivated by the technology's potential. Over the winter break, I immersed myself in AI fundamentals, culminating in developing a primary neural network using Swift. My submission showcased a step-by-step breakdown of the neural network training process, making complex concepts accessible to a broader audience. Fueled by my passion for AI, this innovative approach again secured me a coveted award.<br /><br /><br />
+						<img src="./Images/WWDCWinner2024.webp" alt="Image 3" style="width:320px;height:180px;">
+						</div>
+						<div class="centered-box01-image-box" style="padding-top:32px;">
+							<img src="./Images/AINautralNetwork-1.webp" alt="Image 3" style="width:480px;height:270px;">
+						</div>
 					</div>
-				</div>
-				<div class="centered-box01-right">
-					<div class="centered-box01-description" style="font-size:18px">Sweet Experience<br /></div>
-				</div>
-				<div class="centered-box01-right">
-					<div class="centered-box01-image-box" style="padding-top:32px;">
-						<img src="./Images/AINautralNetwork-5.webp" alt="Image 3" style="width:300px;height:160px;">Worked to 4 AM</img>
+					<div class="centered-box01-right">
+						<div class="centered-box01-description" style="font-size:18px">Sweet Experience<br /></div>
 					</div>
-					<div class="centered-box01-image-box" style="padding-top:32px;">
-						<img src="./Images/AINautralNetwork-6.webp" alt="Image 3" style="width:180px;height:320px;">Five cats with me</img>
-					</div>
-					<div class="centered-box01-image-box" style="padding-top:32px;">
-						<video width="180" height="320" controls>
-						  <source src="./Images/AINautralNetwork-6.mp4" type="video/mp4"></source>
-						</video>
-					<p style="text-align: center; text-color:black; display:block;font-size:16px;"></p>
-					Early bird call
-					</div>
-					
+					<div class="centered-box01-right">
+						<div class="centered-box01-image-box" style="padding-top:32px;">
+							<img src="./Images/AINautralNetwork-5.webp" alt="Image 3" style="width:300px;height:160px;">Worked to 4 AM</img>
+						</div>
+						<div class="centered-box01-image-box" style="padding-top:32px;">
+							<img src="./Images/AINautralNetwork-6.webp" alt="Image 3" style="width:180px;height:320px;">Five cats with me</img>
+						</div>
+						<div class="centered-box01-image-box" style="padding-top:32px;">
+							<video width="180" height="320" controls>
+							  <source src="./Images/AINautralNetwork-6.mp4" type="video/mp4"></source>
+							</video>
+						<p style="text-align: center; text-color:black; display:block;font-size:16px;"></p>
+						Early bird call
+						</div>
 
-				</div>
-				<div class="centered-box01-right">
-					<div class="centered-box01-image-box" style="padding-top:32px;">
-						<img src="./Images/AINautralNetwork-8.webp" alt="Image 3" style="width:360px;height:160px;">Final delivery by deadline</img>
+
 					</div>
-					<div class="centered-box01-image-box" style="padding-top:32px;">
-						<img src="./Images/AINautralNetwork-9.webp" alt="Image 3" style="width:360px;height:210px;">It's dawn</img>
-					</div>
-				</div>
-			</div>
-			<div id="centered-box06" class="centered-box">
-				<div class="centered-box01-captial01">Computer Graphics Course</div>
-				<div class="centered-box01-right">
-					<div class="centered-box01-description" style="font-size:15px">I studied the basic courses of computer graphics at edx, learned the necessary mathematical knowledge, understood the concepts of 3D, the principles of space mapping, and the basic implementation algorithms such as texturing and lighting.
-					</div>
-					<div class="centered-box01-image-box" style="padding-top:32px;">
-						<img src="./Images/Other-1.webp" alt="Image 3" style="width:240px;height:270px;">
+					<div class="centered-box01-right">
+						<div class="centered-box01-image-box" style="padding-top:32px;">
+							<img src="./Images/AINautralNetwork-8.webp" alt="Image 3" style="width:360px;height:160px;">Final delivery by deadline</img>
+						</div>
+						<div class="centered-box01-image-box" style="padding-top:32px;">
+							<img src="./Images/AINautralNetwork-9.webp" alt="Image 3" style="width:360px;height:210px;">It's dawn</img>
+						</div>
 					</div>
 				</div>
-				<div class="centered-box01-captial01">Unity Shader Implementation</div>
-				<div class="centered-box01-right">
-					<div class="centered-box01-description" style="font-size:15px">Although Unity has provided the ShaderGraph function to simplify the implementation of shaders greatly, experienced seniors recommended that I understand the implementation of shaders from the code level as a necessary essential skill for a developer, so I followed the tutorial and worked hard to implement some basic shaders. This allowed me to understand the fundamental underlying logic of 3D graphics operations. I also more clearly mastered implementing simple shaders as needed and controlling the realization of the required 3D effects.
-					</div>
+				
+					-->
+				<div style="margin:32px;">
+					<p> <a href="mailto: tony.ma.2006@outlook.com" style="color:red;"> mailto: tony.ma.2006@outlook.com </a></p>
 				</div>
-				<div class="centered-box01-right">
-					<div class="centered-box01-image-box" style="padding-top:32px;">
-						<img src="./Images/Other-2.webp" alt="Image 3" style="width:260px;height:160px;">Simple Shader</img>
-					</div>
-					<div class="centered-box01-image-box" style="padding-top:32px;">
-						<img src="./Images/Other-3.webp" alt="Image 3" style="width:260px;height:160px;">Bump Map</img>
-					</div>
-					<div class="centered-box01-image-box" style="padding-top:32px;">
-						<img src="./Images/Other-4.webp" alt="Image 3" style="width:260px;height:160px;">Illumination</img>
-					</div>
-				</div>
-				<div class="centered-box01-right">
-					<div class="centered-box01-image-box" style="padding-top:32px;">
-						<img src="./Images/Other-5.webp" alt="Image 3" style="width:260px;height:160px;">Illumination 2</img>
-					</div>
-					<div class="centered-box01-image-box" style="padding-top:32px;">
-						<img src="./Images/Other-6.webp" alt="Image 3" style="width:260px;height:160px;">Transparent</img>
-					</div>
-					<div class="centered-box01-image-box" style="padding-top:32px;">
-						<img src="./Images/Other-7.webp" alt="Image 3" style="width:260px;height:160px;">Mirror</img>
-					</div>
-				</div>
-				<div class="centered-box01-right">
-					<div class="centered-box01-image-box" style="padding-top:32px;">
-						<img src="./Images/Other-8.webp" alt="Image 3" style="width:260px;height:160px;">360 view box</img>
-					</div>
-					<div class="centered-box01-image-box" style="padding-top:32px;">
-						<img src="./Images/Other-9.webp" alt="Image 3" style="width:260px;height:160px;">Water</img>
-					</div>
-					<div class="centered-box01-image-box" style="padding-top:32px;">
-						<img src="./Images/Other-10.webp" alt="Image 3" style="width:260px;height:160px;">Frog</img>
-					</div>
-				</div>
-			</div>
-			<div style="margin:32px;">
-				<p> <a href= "mailto: tony.ma.2006@outlook.com" style="color:red;"> mailto: tony.ma.2006@outlook.com </a></p>
-			</div>
-            </section>
+			</section>
     
             
      
@@ -372,155 +297,31 @@
     </div>
 	
 <script>
-// 添加鼠标悬停事件监听器
-document.getElementById('imgBox01').addEventListener('mouseover', () => {
-    // 更改图像源
-    document.getElementById('imgBoxFore01').src = './Images/ARSports-1.webp';
-	 document.getElementById('item-title01').style.color = 'blue';
-});
-
-// 添加鼠标移出事件监听器
-document.getElementById('imgBox01').addEventListener('mouseout', () => {
-    // 恢复原始图像源
-    document.getElementById('imgBoxFore01').src = './Images/ARSports-0.webp';
-	document.getElementById('item-title01').style.color = 'gray';
-});
-
-// 添加鼠标悬停事件监听器
-document.getElementById('imgBox02').addEventListener('mouseover', () => {
-    // 更改图像源
-    document.getElementById('imgBoxFore02').src = './Images/Helevator-1.webp';
-	 document.getElementById('item-title02').style.color = 'blue';
-});
-
-// 添加鼠标移出事件监听器
-document.getElementById('imgBox02').addEventListener('mouseout', () => {
-    // 恢复原始图像源
-    document.getElementById('imgBoxFore02').src = './Images/Helevator-0.webp';
-	document.getElementById('item-title02').style.color = 'gray';
-});
 	
-// 添加鼠标悬停事件监听器
-document.getElementById('imgBox03').addEventListener('mouseover', () => {
-    // 更改图像源
-    document.getElementById('imgBoxFore03').src = './Images/3DProject-1.webp';
-	document.getElementById('item-title03').style.color = 'blue';
-});
-
-// 添加鼠标移出事件监听器
-document.getElementById('imgBox03').addEventListener('mouseout', () => {
-    // 恢复原始图像源
-    document.getElementById('imgBoxFore03').src = './Images/3DProject-0.webp';
-	document.getElementById('item-title03').style.color = 'gray';
-} );
-	 
-// 添加鼠标悬停事件监听器
-document.getElementById('imgBox04').addEventListener('mouseover', () => {
-    // 更改图像源
-    document.getElementById('imgBoxFore04').src = './Images/ARSports-1.webp';
-	document.getElementById('item-title04').style.color = 'blue';
-});
-
-// 添加鼠标移出事件监听器
-document.getElementById('imgBox04').addEventListener('mouseout', () => {
-    // 恢复原始图像源
-    document.getElementById('imgBoxFore04').src = './Images/ARSports-0.webp';
-	document.getElementById('item-title04').style.color = 'gray';
-});
-
-// 添加鼠标悬停事件监听器
-document.getElementById('imgBox05').addEventListener('mouseover', () => {
-    // 更改图像源
-    document.getElementById('imgBoxFore05').src = './Images/AINautralNetwork-1.webp';
-	 document.getElementById('item-title05').style.color = 'blue';
-});
-
-// 添加鼠标移出事件监听器
-document.getElementById('imgBox05').addEventListener('mouseout', () => {
-    // 恢复原始图像源
-    document.getElementById('imgBoxFore05').src = './Images/AINautralNetwork-0.webp';
-	document.getElementById('item-title05').style.color = 'gray';
-});
-	 
-// 添加鼠标悬停事件监听器
-document.getElementById('imgBox06').addEventListener('mouseover', () => {
-    // 更改图像源
-    document.getElementById('imgBoxFore06').src = './Images/Other-1.webp';
-	document.getElementById('item-title06').style.color = 'blue';
-});
-
-// 添加鼠标移出事件监听器
-document.getElementById('imgBox06').addEventListener('mouseout', () => {
-    // 恢复原始图像源
-    document.getElementById('imgBoxFore06').src = './Images/Other-0.webp';
-	document.getElementById('item-title06').style.color = 'gray';
-});
-
-var currentBox = null ;
+var currentBox = null;
 
 $(document).ready(function() {
 	window.scrollTo(0, 0);
 
     $('#gallery-item01').click(function() {
-		HideBoxes(); 
-		$('#centered-box01').fadeIn(400); // 淡入效果
-		currentBox = $('#centered-box01');
+		window.location.href = 'ARSports.html';
     });
     $('#gallery-item02').click(function() {
-        HideBoxes(); 
-		$('#centered-box02').fadeIn(400); // 淡入效果
-		currentBox = $('#centered-box02');
+        window.location.href = 'Hellevator.html';
     });
     $('#gallery-item03').click(function() {
-        HideBoxes(); 
-		$('#centered-box03').fadeIn(400); // 淡入效果
-		currentBox = $('#centered-box03');
-    });
-    $('#gallery-item04').click(function() {
-        HideBoxes(); 
-		$('#centered-box04').fadeIn(400); // 淡入效果
-		currentBox = $('#centered-box04');
+        window.location.href = 'Monument.html';
     });
     $('#gallery-item05').click(function() {
-        HideBoxes(); 
-		$('#centered-box05').fadeIn(400); // 淡入效果
-		currentBox = $('#centered-box05');
+        window.location.href = 'AINeuralNetwork.html';
     });
     $('#gallery-item06').click(function() {
-        HideBoxes(); 
-		$('#centered-box06').fadeIn(400); // 淡入效果
-		currentBox = $('#centered-box06');
+        window.location.href = 'ComputerGraphics.html';
+    });
+    $('#gallery-item04').click(function() {
+        window.location.href = 'Miscellaneous.html';
     });
 });
-
-
-function HideBoxes($target){
-	$('#gallery-container').fadeOut(200); // 淡出效果
-	$('#fixed-button').fadeIn(400);
-		
-	$('#Section-Container').height('auto');
-	// 延时调用
-	setTimeout(function() {
-		$('#Section-Container').height( $('#Section-Container').scrollHeight + 'px');
-	}, 500);
-}
-
-function ShowBoxes(){
-	if(currentBox!==null){
-		currentBox.fadeOut(200);
-	}
-	$('#gallery-container').fadeIn(400); // 1000表示淡出时间为1秒（1000毫秒）
-	
-	$('#fixed-button').fadeOut(200);
-		
-	$('#Section-Container').height('auto');
-	
-	// 延时调用
-	setTimeout(function() {
-		$('#Section-Container').height( $('#Section-Container').scrollHeight + 'px');
-	}, 500);
-}
-
 </script>
 
 </body>

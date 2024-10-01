@@ -145,3 +145,21 @@ body.light .link__graphic {
 .link:hover .link__graphic--slide {
     transform: translate3d(-66.6%, 0, 0);
 }
+
+.text-container {
+    text-align: left;
+}
+
+.small-text {
+    background-color: lightgray;
+    font-size: 14px;
+}
+
+.large-bold-text {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.normal-text {
+    font-size: 16px;
+}
