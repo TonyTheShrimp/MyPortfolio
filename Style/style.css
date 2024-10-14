@@ -1,7 +1,7 @@
 
 
 html {
-	font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+	font-family: Arial, Courier New, "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
 }
 html,
 body {
@@ -71,12 +71,15 @@ body {
 }
 
 .centered-box01-captial01 {
-	font-size:36px;
+	font-size:42px;
 	margin: 36px;
+	color:#101010;
+	text-align:left;
 }
 
-.centered-box01-left {
+.centered-box01-content {
     padding: 20px;
+	padding-left: 32px;
 	width:100%;
     display: flex;
 }
@@ -106,19 +109,22 @@ body {
 	font-size: 16px;
 }
 
-.centered-box01-right {
-    width:100%;
-    padding: 20px;
-	display: flex;
-}
 
 .centered-box01-description {
 	flex:4;
     flex-grow: 1;
-	font-size: 20px;
-	text-align: left;
+	font-size: 18px;
+	text-align: justify;
 	padding-right: 64px;
-	line-height: 1.8;
+	line-height: 1.6;
+}
+
+.project-duration {
+	text-align:left;
+	padding-left: 40px;
+	font-size: 16px;
+	margin-top: -32px;
+	margin-bottom: 24px;
 }
 
 .centered-box-02-container {
