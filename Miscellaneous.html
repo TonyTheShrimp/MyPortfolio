@@ -48,28 +48,87 @@
 		</div>
 
 		<div id="centered-box04" class="centered-box">
-			<div class="centered-box01-captial01">Small projects for Game Design and Development with Unity 2020</div>
-			<div class="centered-box01-content">
-				<div class="centered-box01-image-box">
-					<a href="https://geniusboy.itch.io/3d-fps" target="_blank"><img src="./Images/Unity01.png" alt="Image 1" style="width:360px;height:210px;" /></a>
-					<div class="centered-box01-caption">3D Shooter <a href="https://geniusboy.itch.io/3d-fps" target="_blank">Play</a></div>
+			
+			
+			<div class="centered-box01-captial01">Music Visualization </div>
+			<div class="project-duration"><b>Duration:</b> 3 days&nbsp;&nbsp;<b>Tools:</b> HTML + Javascript </div>
+			<div class="centered-box01-content" style="display: flex; justify-content: space-between; align-items: flex-start;">
+				<!-- 左侧内容：input 和 audio -->
+				<div style="display: flex; flex-direction: column; align-items: flex-start;">
+					<input type="file" id="audioFile" accept="audio/*">
+					<br><br>
+					<audio id="audio" controls></audio>
 				</div>
-				<div class="centered-box01-image-box">
-					<a href="https://geniusboy.itch.io/3d-platformer" target="_blank"><img src="./Images/unity02.png" alt="Image 2" style="width:360px;height:250px;"  /></a>
-					<div class="centered-box01-caption">3D Platformer <a href="https://geniusboy.itch.io/3d-platformer" target="_blank">Play</a></div>
-				</div>
+
+				<!-- 右侧内容：canvas -->
+				<canvas id="canvas" style="width: 60%; display: flex; flex-direction: column; padding: 20px; gap: 20px;"></canvas>
 			</div>
-			<div class="centered-box01-content">
-				<div class="centered-box01-image-box">
-					<a href="https://geniusboy.itch.io/2d-platformer" target="_blank"><img src="./Images/Unity03.png" alt="Image 3" style="width:360px;height:210px;"  /></a>
-					<div class="centered-box01-caption">2D Platformer <a href="https://geniusboy.itch.io/2d-platformer" target="_blank">Play</a></div>
-				</div>
-				<div class="centered-box01-image-box">
-					<a href="https://geniusboy.itch.io/2dshooter" target="_blank"><img src="./Images/Unity04.png" alt="Image 3" style="width:360px;height:160px;"  /></a>
-					<div class="centered-box01-caption">2D Shooter <a href="https://geniusboy.itch.io/2dshooter" target="_blank">Play</a></div>
-				</div>
-			</div>
+			
 			<hr style="border: 1px solid #B0B0B0; width: 90%; margin: 32px auto;" />
+			
+			<div class="centered-box01-captial01">Convert music to traditional Chinese instruments by DDSP </div>
+			<div class="project-duration"><b>Duration:</b> 2 weeks&nbsp;&nbsp;<b>Tools:</b> Python + Pytorch + DDSP </div>
+			<div class="centered-box01-content" style="display: flex; justify-content: space-between; align-items: flex-start;">
+				<div style="display: flex;height: auto;">
+					<!-- 左侧内容区域 -->
+					<div style="width: 100%;display: flex; flex-direction: column;padding: 20px;gap: 20px;">
+						<!-- 上部文字区域 -->
+						<div class="centered-box01-description">
+							DDSP (Differentiable Digital Signal Processing) is a machine learning approach that combines traditional digital signal processing (DSP) techniques with deep learning. It allows audio generation models to be trained end-to-end by using differentiable DSP operations, such as filters and oscillators.
+						</div>		
+						<!-- 下部图片区域 -->
+						<div style="display: flex;">
+							<img src="./DDSP01.png" alt="图片1" style="width:80%;height:auto;margin:auto;">
+						</div>
+						<div class="centered-box01-description">
+							The following is a simplification of DDSP’s neural network. It illustrates the steps that a piece of audio goes through to be synthesized into what I wished.
+						</div>		
+						<!-- 下部图片区域 -->
+						<div style="display: flex;">
+							<img src="./DDSP02.png" alt="图片1" style="width:80%;height:auto;margin:auto;">
+						</div>
+						<div class="centered-box01-description">
+							In order to achieve the transformation of a any piece of music into a particular instrument that I intended, I employed the DDSP model on my local computer. The model was trained successfully,
+							and worked OK on convert music to tranditional Chinese instruments as Guqin, Pipa, Erhu. But I am still looking for high quality sound sources as training data, and working on deploying the function to website. 
+						</div>	
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<hr style="border: 1px solid #B0B0B0; width: 90%; margin: 32px auto;" />
+			
+			<div class="centered-box01-captial01">The five cats companied me these years.</div>
+			<div class="project-duration"><b>Duration:</b> 1 week in summer&nbsp;&nbsp;<b>Tools:</b> Unity + OpenCV </div>
+			<div class="centered-box01-content" style="display: flex; align-items: center;">
+				<div style="display: flex;height: auto;">
+					<!-- 左侧内容区域 -->
+					<div style="width: 60%;display: flex; flex-direction: column;padding: 20px;gap: 20px;">
+						<!-- 上部文字区域 -->
+						<div class="centered-box01-description">
+							I conducted a research guided by CMU Prof. Pradeep Ravikumar, studying a novel sampling method in machine learning named SimCore to enhance image classification tasks. I later applied this algorithm to develop an app that could identify my cats through facial recognition.
+						</div>		
+						<!-- 下部图片区域 -->
+						<div style="display: flex;">
+							<img src="./Images/CatAll.png" alt="图片1" style="width:80%;height:auto;margin:auto;">
+						</div>
+					</div>
+
+					<!-- 右侧 YouTube 视频区域 -->
+					<div style="width: 25%;display: flex;justify-content: center;align-items: center;padding: 20px;background-color: #fff;">
+						<div class="centered-box01-image-box" style="width:320px;flex:0;margin-left:124px;">
+							<video width="260" height="480" controls>
+							<source src="./Images/CatRec.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<hr style="border: 1px solid #B0B0B0; width: 90%; margin: 32px auto;" />
+			
 			<div class="centered-box01-captial01">Websites I made</div>
 			<div class="centered-box01-content">
 				
@@ -82,66 +141,34 @@
 					<div class="centered-box01-caption">Delivery Rider Stories</div>
 				</div>
 			</div>
+			
 			<hr style="border: 1px solid #B0B0B0; width: 90%; margin: 32px auto;" />
-			<div class="centered-box01-captial01">The five cats companied me these years.</div>
-			<div class="project-duration"><b>Duration:</b> 1 week in summer&nbsp;&nbsp;<b>Tools:</b> Unity + OpenCV </div>
-			<div class="centered-box01-content" style="display: flex; align-items: center;">
-			 <div style="display: flex;height: auto;">
-				<!-- 左侧内容区域 -->
-				<div style="width: 60%;display: flex; flex-direction: column;padding: 20px;gap: 20px;">
-				  <!-- 上部文字区域 -->
-				 <div class="centered-box01-description">
-					I conducted a research guided by CMU Prof. Pradeep Ravikumar, studying a novel sampling method in machine learning named SimCore to enhance image classification tasks. I later applied this algorithm to develop an app that could identify my cats through facial recognition.
-				 </div>		
-				  <!-- 下部图片区域 -->
-				  <div style="display: flex;">
-					<img src="./Images/CatAll.png" alt="图片1" style="width:80%;height:auto;margin:auto;">
-					
-					<!--
-					<div class="centered-box01-image-box" style="width:100px;">
-						<img src="./Images/cat01.jpg" alt="Image 1" style="width:85px;height:140px;margin:0;" /></a>
-						<div class="centered-box01-caption" style="width:100px;">Blacky </div>
-					</div>
-					<div class="centered-box01-image-box" style="width:100px;">
-						<img src="./Images/cat02.jpg" alt="Image 1" style="width:105px;height:140px;margin:0;" /></a>
-						<div class="centered-box01-caption" style="width:100px;">Flowery </div>
-					</div>
-					<div class="centered-box01-image-box" style="width:100px;">
-						<img src="./Images/Cat03.png" alt="Image 1" style="width:95px;height:140px;margin:0;" /></a>
-						<div class="centered-box01-caption" style="width:100px;">Luna</div>
-					</div>
-					<div class="centered-box01-image-box" style="width:100px;">
-						<img src="./Images/cat04.jpg" alt="Image 1" style="width:105px;height:96px;margin:0;" /></a>
-						<div class="centered-box01-caption" style="width:100px;">Suger</div>
-					</div>
-					<div class="centered-box01-image-box" style="width:100px;">
-						<img src="./Images/Cat05.jpg" alt="Image 1" style="width:105px;height:140px;margin:0;" /></a>
-						<div class="centered-box01-caption" style="width:100px;">Orange </div>
-					</div> -->
-				  </div>
-				</div>
-
-				<!-- 右侧 YouTube 视频区域 -->
-				<div style="width: 25%;display: flex;justify-content: center;align-items: center;padding: 20px;background-color: #fff;">
-				  <div class="centered-box01-image-box" style="width:320px;flex:0;margin-left:124px;">
-					<video width="260" height="480" controls>
-					  <source src="./Images/CatRec.mp4" type="video/mp4">
-					  Your browser does not support the video tag.
-					</video>
-					</div>
-				</div>
-			  </div>
-				
-					
-				
-
-				
-
-			</div>
+			
+			<div class="centered-box01-captial01">Small projects for Game Design and Development with Unity 2020</div>
 			<div class="centered-box01-content">
-				
-				
+				<div class="centered-box01-image-box">
+					<a href="https://geniusboy.itch.io/3d-fps" target="_blank"><img src="./Images/Unity01.png" alt="Image 1" style="width:360px;height:210px;" /></a>
+					<div class="centered-box01-caption">3D Shooter <a href="https://geniusboy.itch.io/3d-fps" target="_blank">Play</a></div>
+				</div>
+				<div class="centered-box01-image-box">
+					<a href="https://geniusboy.itch.io/3d-platformer" target="_blank"><img src="./Images/unity02.png" alt="Image 2" style="width:360px;height:250px;"  /></a>
+					<div class="centered-box01-caption">3D Platformer <a href="https://geniusboy.itch.io/3d-platformer" target="_blank">Play</a></div>
+				</div>
 			</div>
+			
+			<div class="centered-box01-content">
+				<div class="centered-box01-image-box">
+					<a href="https://geniusboy.itch.io/2d-platformer" target="_blank"><img src="./Images/Unity03.png" alt="Image 3" style="width:360px;height:210px;"  /></a>
+					<div class="centered-box01-caption">2D Platformer <a href="https://geniusboy.itch.io/2d-platformer" target="_blank">Play</a></div>
+				</div>
+				<div class="centered-box01-image-box">
+					<a href="https://geniusboy.itch.io/2dshooter" target="_blank"><img src="./Images/Unity04.png" alt="Image 3" style="width:360px;height:160px;"  /></a>
+					<div class="centered-box01-caption">2D Shooter <a href="https://geniusboy.itch.io/2dshooter" target="_blank">Play</a></div>
+				</div>
+			</div>
+			
+			
+			
 		</div>
 	</div>
 					
@@ -218,6 +245,127 @@ function ShowBoxes(){
 		$('#Section-Container').height( $('#Section-Container').scrollHeight + 'px');
 	}, 500);
 }
+
+
+	const audio = document.getElementById("audio");
+	const fileInput = document.getElementById("audioFile");
+	const canvas = document.getElementById("canvas");
+	const ctx = canvas.getContext("2d");
+
+	canvas.width = window.innerWidth * 0.6;
+	canvas.height = 300;
+
+	let audioContext, analyser, source;
+	let dataArray, bufferLength;
+	let animationFrameId;
+	let sourceCreated = false;
+	let baseLine = canvas.height * 0.75;
+	let waveData = new Array(100).fill(baseLine);
+	let riderIndex = 50;
+	let jumpVelocity = 0;
+	let isJumping = false;
+	let inAir = false;
+
+	// 🎬 载入火柴人 WebP 图片
+	let riderImage = new Image();
+	riderImage.src = "rider.png"; // 这里换成你的 WebP 图片地址
+
+	fileInput.addEventListener("change", (event) => {
+		const file = event.target.files[0];
+		if (!file) return;
+		const objectURL = URL.createObjectURL(file);
+		audio.src = objectURL;
+		audio.load();
+		console.log("音频加载成功", file.name);
+		audio.oncanplaythrough = () => {
+			audio.play().then(() => {
+				console.log("音频播放成功");
+				initAudioProcessing();
+			}).catch(error => {
+				console.log("音频播放失败", error);
+			});
+		};
+	});
+
+	function initAudioProcessing() {
+		if (!audioContext) {
+			audioContext = new (window.AudioContext || window.webkitAudioContext)();
+		}
+		if (!analyser) {
+			analyser = audioContext.createAnalyser();
+			analyser.fftSize = 256;
+			bufferLength = analyser.frequencyBinCount;
+			dataArray = new Uint8Array(bufferLength);
+		}
+		if (!sourceCreated) {
+			source = audioContext.createMediaElementSource(audio);
+			source.connect(analyser);
+			analyser.connect(audioContext.destination);
+			sourceCreated = true;
+		}
+		if (audioContext.state === "suspended") {
+			document.addEventListener("click", () => {
+				audioContext.resume().then(() => console.log("音频上下文已恢复"));
+			}, { once: true });
+		}
+		if (animationFrameId) {
+			cancelAnimationFrame(animationFrameId);
+		}
+		draw();
+	}
+
+	function draw() {
+		analyser.getByteFrequencyData(dataArray);
+		let avgAmplitude = dataArray.reduce((sum, val) => sum + val, 0) / bufferLength;
+		waveData.shift();
+		let newWaveHeight = baseLine - avgAmplitude * 1.2;
+		waveData.push(newWaveHeight);
+
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+		ctx.beginPath();
+		ctx.lineWidth = 6;
+		ctx.strokeStyle = "black";
+		for (let i = 0; i < waveData.length; i++) {
+			let x = i * (canvas.width / waveData.length);
+			let y = waveData[i];
+			if (i === 0) {
+				ctx.moveTo(x, y);
+			} else {
+				ctx.lineTo(x, y);
+			}
+		}
+		ctx.stroke();
+
+		drawRider(avgAmplitude);
+		animationFrameId = requestAnimationFrame(draw);
+	}
+
+	function drawRider(avgAmplitude) {
+		let riderX = riderIndex * (canvas.width / waveData.length);
+		let riderY = waveData[riderIndex];
+		let waveDeviation = Math.abs(baseLine - waveData[riderIndex]);
+
+		// 🔥 让小人跳得更高更频繁
+		if (waveDeviation > canvas.height * 0.05 && !inAir) {  // **降低触发阈值**
+			jumpVelocity = -12; // **加大跳跃力度**
+			inAir = true;
+			isJumping = true;
+		}
+
+		if (isJumping) {
+			riderY += jumpVelocity;
+			jumpVelocity += 0.4; // **加快下降速度**
+			if (riderY >= waveData[riderIndex] && inAir) {
+				riderY = waveData[riderIndex];
+				isJumping = false;
+				inAir = false;
+			}
+		}
+
+		let imageWidth = 50; // 图片宽度
+		let imageHeight = 80; // 图片高度
+		ctx.drawImage(riderImage, riderX - imageWidth / 2, riderY - imageHeight, imageWidth, imageHeight);
+	}
 
 </script>
 
