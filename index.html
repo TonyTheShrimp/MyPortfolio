@@ -46,6 +46,19 @@
 				<div>
 					<img class="banner" src="./Images/TopTitle.png" alt="Banner Image" />
 				</div>
+				
+				<div class="navbar">
+					<ul>
+						<li class="menu-item active" id="home-link" ><a href="index.html">Home</a></li>
+						<li class="menu-item" id="arsports-link"><a href="ARSports.html">AR Sports</a></li>
+						<li class="menu-item" id="helleve-link"><a href="Hellevator.html">Hellevator</a></li>
+						<li class="menu-item" id="monument-link"><a href="Monument.html">Monument Valley Clone</a></li>
+						<li class="menu-item" id="aineural-link"><a href="AINeuralNetwork.html">AI Neural Network</a></li>
+						<li class="menu-item" id="graphics-link"><a href="ComputerGraphics.html">Computer Graphics</a></li>
+						<li class="menu-item" id="misc-link"><a href="Miscellaneous.html">Miscellaneous</a></li>
+					</ul>
+				</div>
+				
 				<div class="gallery" id="gallery-container">
 					<div class="gallery-item" id="gallery-item01">
 						<img class="background" id="imgBox01" src="./Images/BoxBG03.png" alt="Background Image 1" />
@@ -114,6 +127,8 @@
 var currentBox = null;
 
 $(document).ready(function() {
+ 
+	
 	window.scrollTo(0, 0);
 
     $('#gallery-item01').click(function() {
